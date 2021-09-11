@@ -120,7 +120,7 @@ line-height: 2;
 
 .icon {
     text-align: center;
-    padding: 15px;
+    padding-top: 15px;
 
 }
 .location {
@@ -131,10 +131,31 @@ line-height: 2;
 }
 
 .location .city {
-    font-size:  20px;
+    font-size: 20px;
     font-weight: bold;
 }
 
+.current {
+    width: 100%;
+    position: relative;
+    padding-top: 10px;
+    color:white;
+    text-align: left;
+}
+
+.current::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+
+.current > * {
+    padding-bottom: 10px;
+}
 
 
 
